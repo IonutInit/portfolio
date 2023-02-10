@@ -2,13 +2,11 @@
 
 The repository for my portfolio, live at [ionut.cojocaru.co.uk](https://ionut.cojocaru.co.uk/).
 
-
-
 ## Contents
 
 #### Backend
 
-A small server for communicating with OpenAI
+A small server for communicating with OpenAI. 
 
 #### Client
 

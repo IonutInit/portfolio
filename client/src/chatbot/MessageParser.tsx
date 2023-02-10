@@ -12,7 +12,7 @@ const MessageParser = ({ children, actions }: any) => {
       // eslint-disable-next-line no-useless-catch
       try {
         const response = await fetch(
-          "https://open-ai-98vj.onrender.com/api/v1/text",
+          "https://iobot-chat.onrender.com/api/v1/text",
           {
             method: "POST",
             headers: {
