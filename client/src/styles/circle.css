@@ -1,0 +1,77 @@
+.circle {
+    --dimensions: 35vw;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    background-color: var(--secondary);
+    box-shadow: -5px 5px 10px var(--tertiary);
+    border-radius: 90% !important;
+    position: absolute;
+    left: 2.5vw;
+    top: 17vh;
+    z-index: -1;   
+  }
+
+.circle:hover {
+    background-color: var(--primary);
+  }
+
+.circle-animate {
+    animation: hello 0.8s ease-in;
+  }
+  @keyframes hello {
+    0% {
+      transform: scale(7);
+    }
+    100% {
+      transform: scale(1)
+    }
+  }
+
+
+  /* pulsating animation */
+
+  /* @keyframes hello {
+    0% {
+      transform: scale(7);
+    }
+    15% {
+      transform: scale(1)
+    }
+    42% {
+      transform: scale(1);
+      box-shadow: -5px 5px 10px var(--tertiary);
+    }
+    43% {
+      transform: scale(1.2);
+      box-shadow: 5px 5px 10px var(--secondary);
+    }
+    47% {
+      transform: scale(1)
+    }
+  
+   62% {
+    transform: scale(1);
+    box-shadow: -5px 5px 10px var(--tertiary);
+   }
+    63% {
+      transform: scale(1.2);
+      box-shadow: 5px 5px 10px var(--secondary);
+    }
+  
+    67% {
+      transform: scale(1)
+    }
+  
+    92% {
+      transform: scale(1);
+      box-shadow: -5px 5px 10px var(--tertiary);
+     }
+      93% {
+        transform: scale(1.2);
+        box-shadow: 5px 5px 10px var(--secondary);      
+      }
+    
+      97% {
+        transform: scale(1)
+      }
+  }  */

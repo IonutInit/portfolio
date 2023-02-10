@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" version="1.1" viewBox="0 0 63 63" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(-561.18 -650.81)">
+        <g transform="translate(-29.527 -36.057)">
+            <g transform="translate(97.076)">
+                <path d="m523.02 711.34c0.426 0.668 0.813 1.276 1.163 1.823 0.349 0.547 0.691 1.125 1.026 1.732h0.136c0.365-0.668 0.715-1.284 1.049-1.846s0.714-1.162 1.14-1.801l5.424-8.433h4.149l-9.938 14.861 10.394 16.23h-4.422l-5.562-8.936c-0.425-0.699-0.851-1.39-1.276-2.074-0.426-0.684-0.851-1.375-1.277-2.074h-0.091l-2.598 4.239-5.471 8.845h-4.194l10.348-16.047-9.983-15.044h4.467l5.516 8.525z" fill="#2b2d42" fill-rule="nonzero" stroke="#2b2d42" stroke-width="1px"/>
+            </g>
+            <g transform="translate(93.713 -1.2667)">
+                <circle cx="528.48" cy="719.63" r="30.082" fill="none" stroke="#2b2d42" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="1" stroke-width="2px"/>
+            </g>
+        </g>
+    </g>
+</svg>

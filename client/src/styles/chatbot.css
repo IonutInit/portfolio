@@ -1,0 +1,177 @@
+.chat-container {
+    --chat-width: 275px;
+    --button-heigth: 50px;
+    --chat-heigth: 500px;
+    width: var(--chat-width);
+    height: var(--chat-heigth) + var(--button-heigth);
+    position: fixed;
+    right: 2%;
+    bottom: 10vh;
+    transition: 1s;
+    box-shadow: -3px -3px 2px 0px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+
+  .chat-container-hidden {
+    transform: translateY(500px);
+    -webkit-transform: translateY(500px);
+    -moz-transform: translateY(500px);
+    transition: 1s;
+  }
+
+  .chat-button {
+    height: var(--button-heigth);
+    width: 100%;
+    text-align: center;
+    background-color: var(--tertiary);
+    border: 5px solid var(--tertiary);
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .react-chatbot-kit-chat-container {
+    border-right: 2px solid var(--light-gray);
+    border-left: 3px solid var(--light-gray);
+  }
+    
+  .react-chatbot-kit-chat-inner-container {
+    height: var(--chat-heigth);
+    border-radius: 0px;
+  }
+  
+  .react-chatbot-kit-chat-header {
+    display: none;
+  }
+  
+  .react-chatbot-kit-chat-input-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin-bottom: -50px;
+    padding-bottom: 3px;
+  }
+  
+.react-chatbot-kit-chat-message-container {
+    overflow: scroll;
+    height: 450px;  
+  }
+  
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar {
+    width: 0px;    
+  }
+  
+.react-chatbot-kit-chat-input {
+    width: 100%;
+    border: none;
+    font-size: 0.85rem;
+    border-bottom: 2px solid var(--primary);
+    border-radius: 0px;
+  }
+
+.react-chatbot-kit-chat-input:focus {
+    border-bottom: 3px solid var(--primary);
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+
+.react-chatbot-kit-chat-input:not(:focus) {
+    transition: 0.3s;
+  }
+  
+.react-chatbot-kit-chat-input-form {
+    width: 100%;
+    display: flex;
+  }
+  
+.react-chatbot-kit-chat-input::placeholder {
+    color: var(--tertiary);
+  }
+  
+.react-chatbot-kit-chat-btn-send {
+    background-color: var(--primary);
+    width: 70px;
+    color: #ffffff;
+  }
+  
+.react-chatbot-kit-chat-btn-send-icon {
+    fill: #fff;
+    width: 15px;
+    margin: 0 auto;
+  }
+ 
+.react-chatbot-kit-chat-bot-avatar-container {
+    background-color: var(--primary); 
+  }
+ 
+.react-chatbot-kit-chat-bot-message {
+    background-color: var(--primary);
+    /* font-size: 0.9rem; */
+    color: #fff;
+  }
+  
+.react-chatbot-kit-chat-bot-message-arrow {
+    border-right: 8px solid var(--primary);
+  }
+  
+.react-chatbot-kit-user-avatar-container {
+    background-color: var(--secondary);
+  }
+  
+.react-chatbot-kit-user-chat-message {
+    background-color: var(--secondary);
+    /* font-size: 0.9rem; */
+    color: #fff;
+  }
+  
+.react-chatbot-kit-user-chat-message-arrow {
+    border-left: 8px solid var(--secondary);
+  }
+  
+
+@media (prefers-color-scheme: dark) {
+  .chat-container {
+    box-shadow: -2px -3px 2px 0px var(--secondary-dark);
+  }
+  .react-chatbot-kit-user-chat-message {
+      background-color: var(--secondary-dark)
+  }
+  .react-chatbot-kit-user-chat-message-arrow {
+      border-left: 8px solid var(--secondary-dark);
+  }
+  .react-chatbot-kit-chat-message-container {
+      background-color: var(--light-gray);
+  }
+  .react-chatbot-kit-chat-inner-container {
+      background-color:var(--light-gray);
+  }
+  .react-chatbot-kit-chat-input-container {
+      background-color: var(--light-gray);
+  }
+  .react-chatbot-kit-chat-input {
+      background-color: var(--light-gray);
+  }
+  .react-chatbot-kit-chat-btn-send {
+      background-color: var(--primary);
+  } 
+  .react-chatbot-kit-chat-btn-send:hover {
+      background-color: var(--primary);
+  }
+  .react-chatbot-kit-chat-input {
+    color: var(--primary);
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .chat-container {
+    z-index: 1;
+    right: 2%;
+    bottom: 1vh;
+  }
+  .chat-container-hidden {
+    z-index: 0;
+    bottom: 10vh;
+  }
+
+}

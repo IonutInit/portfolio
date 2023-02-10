@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Harmonia;
+  src: url('./assets/fonts/Harmonia.ttf');  
+}
+
+@font-face {
+  font-family: Museo;
+  src: url('./assets/fonts/Museo500.otf')
+}
+
+* {
+  font-family: Harmonia;
+  --primary: #2B2D42;
+  --secondary: #D90429;
+  --tertiary: #8D99AE;
+  --light-gray: #EDF2F4; 
+  --primary-focus: none;
+  --primary-hover: none;
+  --form-element-focus-color: none;
+
+  --primary-dark: #11191f;
+  --secondary-dark: #d1c284; 
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  button {
+      background-color: var(--secondary-dark);
+      color: var(--primary-dark);
+  }
+
+  button:hover {
+    background-color: var(--tertiary);
+    box-shadow: 3px 3px 0px var(--secondary-dark); 
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+      background-color: var(--primary);
+      color: #fff;
+  }
+
+  button:hover {
+    background-color: var(--secondary);
+    box-shadow: 3px 3px 0px var(--primary); 
+  }
+}
+
+
+h1 {
+  font-family: Museo;
+  color: var(--light-gray);
+  font-size: 6vw;
+  letter-spacing: .15em;
+  margin: -5px;
+  text-shadow: 0.3vw 1px var(--primary);
+}
+
+h2 {
+  font-family: Museo;
+  color: var(--primary);
+  letter-spacing: .15em;
+  margin: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+

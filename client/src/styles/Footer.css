@@ -1,0 +1,42 @@
+.footer {
+    width: 100%;
+    min-height: 10vh;
+    position: fixed;
+    bottom: 0%;
+    background-color: var(--tertiary);
+}
+
+.footer-line {
+    height: 0.8vh;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 1vh;
+}
+
+.footer-logo-container {
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-logo-container img {
+    margin-right: 10%;
+    margin-top: 1vh;
+}
+
+.logo-footer {
+    width: 50px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background-color: var(--tertiary);  
+    }
+
+    .footer-line {
+        background-color: var(--primary-dark); 
+    }
+  }

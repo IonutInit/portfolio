@@ -1,0 +1,23 @@
+.home-container {
+  padding-top: 120px;
+  padding-bottom: 12vh;
+  z-index: -1;
+}
+
+.intro-container {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: -1;
+}
+
+.portfolio-container {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+  padding: 30px 0px;
+}
