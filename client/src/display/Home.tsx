@@ -29,22 +29,24 @@ const Home = () => {
     <div className="home-container">
       <div className="intro-container">
         {/* <Draggable nodeRef={nodeRef}> */}
-          <div
-            ref={nodeRef}
-            className={`circle ${helloText === 0 ? "circle-animate" : ""}`}
-            role="button"
-            onClick={handleClick}
-            tabIndex={0}
-            aria-label="Press me"
-          />
-          <div
-            ref={nodeRef}
-            className={`circle2 ${helloText === 0 ? "circle-animate" : ""}`}
-            role="button"
-            onClick={handleClick}
-            tabIndex={0}
-            aria-label="Press me"
-          />
+        <div
+          ref={nodeRef}
+          className={`circle ${helloText === 0 ? "circle-animate" : ""}`}
+          role="button"
+          onClick={handleClick}
+          tabIndex={0}
+          aria-label="Press me"
+        />
+        {/* </Draggable> */}
+        {/* <Draggable nodeRef={nodeRef}> */}
+        <div
+          ref={nodeRef}
+          className={`circle2 ${helloText === 0 ? "circle-animate" : ""}`}
+          role="button"
+          onClick={handleClick}
+          tabIndex={0}
+          aria-label="Press me"
+        />
         {/* </Draggable> */}
 
         <Hello helloText={helloText} />
