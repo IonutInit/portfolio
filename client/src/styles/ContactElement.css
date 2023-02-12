@@ -73,9 +73,11 @@
 }
 
 .show img {
-    transform: translate(-90%, -50%) scale(0.4);
+    /* transform: translate(-90%, -50%) scale(0.4); */
+    transform: scale(1.5);
     transition: var(--transition-in);
-    opacity: 0.3;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 .show a {

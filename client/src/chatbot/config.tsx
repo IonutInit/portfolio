@@ -9,7 +9,7 @@ const config = {
   botName: "Iobot",
   initialMessages: [
     createChatBotMessage(
-      `Hi there. I'm a finely tuned OpenAI DaVinci model meant to impersonate Ionut.`,
+      `Hi there. I'm a finely tuned but badly trained OpenAI DaVinci model meant to impersonate Ionut.`,
       {}
     ),
     createChatBotMessage(
@@ -27,7 +27,7 @@ const config = {
       }
     ),
     createChatBotMessage(
-      "Oh, one other thing, I'm hosted on a free platform, so my first answer may be a bit slow.",
+      "Oh, one other thing. I'm hosted on a free platform, so my first answer may be a bit slow.",
       {
         withAvatar: true,
         delay: 10000,

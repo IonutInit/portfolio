@@ -24,7 +24,7 @@ export async function generateText(req, res) {
       model,
       prompt: `${prompt} ->`,
       max_tokens: 100,
-      temperature: 0.2,
+      temperature: 0,
       // "top_p": 1,
       // "n": 1,
       // "stream": false,
