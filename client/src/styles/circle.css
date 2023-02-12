@@ -11,6 +11,20 @@
     z-index: -1;   
   }
 
+  .circle2 {
+    --dimensions: 35vw;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    background-color: var(--secondary);
+    box-shadow: -5px 5px 10px var(--tertiary);
+    border-radius: 90% !important;
+    position: absolute;
+    left: 2.5vw;
+    top: 17vh;
+    opacity: 0;
+    /* z-index: -1;    */
+  }
+
 .circle:hover {
     background-color: var(--primary);
   }

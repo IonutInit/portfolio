@@ -14,7 +14,6 @@ import linkedIn from "../assets/images/linked_in.svg";
 import riddleFiddle from "../assets/images/riddle_fiddle.svg";
 import stack from "../assets/images/stack.svg";
 import ioBot from "../assets/images/io_bot.svg";
-import email from "../assets/images/email.svg";
 import artifices from "../assets/images/artifices.svg";
 
 const Home = () => {
@@ -29,7 +28,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="intro-container">
-        <Draggable nodeRef={nodeRef}>
+        {/* <Draggable nodeRef={nodeRef}> */}
           <div
             ref={nodeRef}
             className={`circle ${helloText === 0 ? "circle-animate" : ""}`}
@@ -38,7 +37,15 @@ const Home = () => {
             tabIndex={0}
             aria-label="Press me"
           />
-        </Draggable>
+          <div
+            ref={nodeRef}
+            className={`circle2 ${helloText === 0 ? "circle-animate" : ""}`}
+            role="button"
+            onClick={handleClick}
+            tabIndex={0}
+            aria-label="Press me"
+          />
+        {/* </Draggable> */}
 
         <Hello helloText={helloText} />
 
@@ -50,6 +57,7 @@ const Home = () => {
             buttonCount={1}
             button1="Coming Soon"
           />
+
           <PortfolioElement
             elementLogo={github}
             title="GitHub"
@@ -58,6 +66,7 @@ const Home = () => {
             button1="Visit"
             href1="https://github.com/IonutInit"
           />
+
           <PortfolioElement
             elementLogo={linkedIn}
             title="LinkedIn"
@@ -66,6 +75,7 @@ const Home = () => {
             button1="Visit"
             href1="https://www.linkedin.com/in/ionut-cojocaru-dev"
           />
+
           <PortfolioElement
             elementLogo={riddleFiddle}
             title="The Riddle Fiddle"
@@ -76,14 +86,16 @@ const Home = () => {
             button2="Visit"
             href2="https://riddles.artifices.xyz/"
           />
+
           <PortfolioElement
             elementLogo={stack}
             title="My Stack"
-            description="Find out more about my current stack."
+            description="Find out more about my current stack and documentation process."
             buttonCount={1}
             button1="Read More"
             href1="https://docs.cojocaru.co.uk"
           />
+
           <PortfolioElement
             elementLogo={ioBot}
             title="IObot"
@@ -92,15 +104,9 @@ const Home = () => {
             button1="Docs"
             href1="https://en.wikipedia.org/wiki/Main_Page"
           />
+
           <ContactElement />
-          {/* <PortfolioElement
-            elementLogo={email}
-            title="Get In Touch"
-            description="Press on the button below to emal me."
-            buttonCount={1}
-            button1="Email"
-            href1="mailto:ionutcojocaru@outlook.com"
-          /> */}
+
           <PortfolioElement
             elementLogo={artifices}
             title="Artifices"

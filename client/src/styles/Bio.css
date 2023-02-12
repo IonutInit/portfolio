@@ -124,6 +124,17 @@ input[type='range']::-moz-range-track {
 }
 
 
+.bio-attribution {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bio-attribution p {
+    font-size: 12px;
+}
+
 
 @media (prefers-color-scheme: dark) {
     img {
@@ -147,4 +158,8 @@ input[type='range']::-moz-range-track {
         .bio-highlight {
         background-color: var(--secondary-dark);
         }
+        .bio-attribution p a {
+            color:var(--light-grey);
+        }
+        
 }

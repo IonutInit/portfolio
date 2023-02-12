@@ -22,6 +22,14 @@ const Bio = () => {
         {sliderStep >= 201 && sliderStep <= 300 && <Bio3 />}
         {sliderStep >= 301 && sliderStep <= 400 && <Bio4 />}
       </div>
+      <div className="bio-attribution">
+        <p>
+          Illustrations by{" "}
+          <a href="https://absurd.design/" target="_blank" rel="noreferrer">
+            absurd.design
+          </a>
+        </p>
+      </div>
 
       <input
         className="slider"
