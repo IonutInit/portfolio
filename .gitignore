@@ -27,3 +27,5 @@ client/*.sln
 client/*.sw?
 
 client/.env
+
+documentation
