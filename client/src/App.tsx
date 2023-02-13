@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-import ReactGA from "react-ga";
-
 import Chatbot from "react-chatbot-kit";
 import config from "./chatbot/config";
 import MessageParser from "./chatbot/MessageParser";
@@ -17,9 +14,6 @@ import Bio from "./display/Bio";
 import "@picocss/pico/css/pico.min.css";
 import "./styles/chatbot.css";
 import "./App.css";
-
-ReactGA.initialize("G-N3255PP7HQ");
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   const [activateChatBot, setActivateChatBot] = useState(false);
