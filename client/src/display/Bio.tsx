@@ -69,7 +69,7 @@ const Bio = () => {
         </a>
 
         <a
-          href="https://en.wikipedia.org/wiki/Main_Page"
+          href="https://docs.cojocaru.co.uk/welcome/#my-current-stack"
           target="_blank"
           rel="noreferrer"
         >

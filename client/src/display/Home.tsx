@@ -93,9 +93,9 @@ const Home = () => {
             description="A text-based word-guessing game with AI imagery and a custom hints algorithm"
             buttonCount={2}
             button1="Docs"
-            href1="https://riddles.cojocaru.co.uk/"
+            href1="https://docs.cojocaru.uk/the-riddle-fiddle"
             button2="Visit"
-            href2="https://riddles.artifices.xyz/"
+            href2="https://riddles.artifices.xyz"
           />
 
           <PortfolioElement
@@ -113,7 +113,7 @@ const Home = () => {
             description="An OpenAI model trained to impersonate me. If you want to know... us better, just open the chat below."
             buttonCount={1}
             button1="Docs"
-            href1="https://en.wikipedia.org/wiki/Main_Page"
+            href1="https://docs.cojocaru.co.uk/iobot"
           />
 
           <ContactElement />
