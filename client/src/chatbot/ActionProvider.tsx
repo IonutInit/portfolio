@@ -2,6 +2,13 @@
 import React from "react";
 
 function ActionProvider({ createChatBotMessage, setState, children }) {
+  const addMessage = (botMessage) => {
+    setState((prev: { messages: any }) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  };
+
   async function handleReply(botReply: any) {
     // eslint-disable-next-line func-names
     (async function () {
@@ -13,12 +20,15 @@ function ActionProvider({ createChatBotMessage, setState, children }) {
       }
     });
     const botMessage = createChatBotMessage(await botReply);
-
-    setState((prev: { messages: any }) => ({
-      ...prev,
-      messages: [...prev.messages, botMessage],
-    }));
+    addMessage(botMessage);
   }
+
+  const limitExceeded = (charLimit: number) => {
+    const botMessage = createChatBotMessage(
+      `Error... Error... That's a lot of tokens, you know! I can only accept inputs smaller than ${charLimit} characters long.`
+    );
+    addMessage(botMessage);
+  };
 
   return (
     <div>
@@ -26,6 +36,7 @@ function ActionProvider({ createChatBotMessage, setState, children }) {
         return React.cloneElement(child, {
           actions: {
             handleReply,
+            limitExceeded,
           },
         });
       })}
