@@ -70,7 +70,7 @@ const Hello: FunctionComponent<Props> = ({ helloText }) => {
       <div className="hello-div" />
 
       <div className="hello-annotation">
-        <p>This page is about what I&apos;m about.</p>
+        <p>This website is about what I&apos;m about.</p>
       </div>
     </div>
   );

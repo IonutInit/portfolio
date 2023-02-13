@@ -2,32 +2,31 @@
     --dimensions: 35vw;
     width: var(--dimensions);
     height: var(--dimensions);
-    background-color: var(--secondary);
+    background-color: var(--primary);
     box-shadow: -5px 5px 10px var(--tertiary);
     border-radius: 90% !important;
     position: absolute;
     left: 2.5vw;
     top: 17vh;
-    z-index: -1;   
+    z-index: -1;  
   }
 
   .circle2 {
     --dimensions: 35vw;
     width: var(--dimensions);
     height: var(--dimensions);
-    background-color: var(--secondary);
+    background-color: var(--primary);
     box-shadow: -5px 5px 10px var(--tertiary);
     border-radius: 90% !important;
     position: absolute;
     left: 2.5vw;
     top: 17vh;
     opacity: 0;
-    /* z-index: -1;    */
   }
 
-.circle:hover {
+/* .circle:hover {
     background-color: var(--primary);
-  }
+  } */
 
 .circle-animate {
     animation: hello 0.8s ease-in;

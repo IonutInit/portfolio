@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import Draggable from "react-draggable";
+import { useState, useRef, useEffect } from "react";
+// import Draggable from "react-draggable";
 
 import Hello from "../components/Hello";
 import PortfolioElement from "../components/PortfolioElement";
@@ -18,7 +18,16 @@ import artifices from "../assets/images/artifices.svg";
 
 const Home = () => {
   const [helloText, useHelloText] = useState(0);
+  const [startingAnimation, setStartingAnimation] = useState(0);
+  const [initialRender, setInitialRender] = useState(true);
   const nodeRef = useRef(null);
+
+  useEffect(() => {
+    if (initialRender) {
+      setStartingAnimation((a) => a + 1);
+      setInitialRender(false);
+    }
+  }, [startingAnimation, initialRender]);
 
   const handleClick = () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions, react-hooks/rules-of-hooks
@@ -41,7 +50,7 @@ const Home = () => {
         {/* <Draggable nodeRef={nodeRef}> */}
         <div
           ref={nodeRef}
-          className={`circle2 ${helloText === 0 ? "circle-animate" : ""}`}
+          className="circle2"
           role="button"
           onClick={handleClick}
           tabIndex={0}
