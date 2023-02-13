@@ -6,8 +6,7 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-// const model = 'ada:ft-personal-2023-02-06-18-08-20'
-const model = "davinci:ft-personal-2023-02-07-08-18-37";
+const model = "davinci:ft-personal-2023-02-13-13-35-11"
 
 const mongoURI = process.env.MONGO_URI;
 const mongoClient = new MongoClient(mongoURI);
@@ -24,7 +23,7 @@ export async function generateText(req, res) {
       model,
       prompt: `${prompt} ->`,
       max_tokens: 100,
-      temperature: 0,
+      temperature: 0.4,
       // "top_p": 1,
       // "n": 1,
       // "stream": false,
