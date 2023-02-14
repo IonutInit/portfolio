@@ -27,7 +27,7 @@ const config = {
       }
     ),
     createChatBotMessage(
-      "Oh, one other thing. I'm hosted on a free platform, so my first answer may be a bit slow.",
+      "Oh, one more thing. I'm hosted on a free platform, so my first answer may be a bit slow.",
       {
         withAvatar: true,
         delay: 10000,

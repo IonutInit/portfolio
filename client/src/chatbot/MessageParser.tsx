@@ -24,6 +24,9 @@ async function sendReceive(message: any) {
       }
     );
     const botReply = await response.json();
+    if (response.status === 429) {
+      return "Oops, looks like the lines are busy. Please try again later.";
+    }
     return `${botReply}.`;
   } catch (err) {
     throw err;
