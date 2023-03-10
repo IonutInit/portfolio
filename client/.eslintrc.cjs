@@ -4,8 +4,8 @@ module.exports = {
         "es2021": true
     },
     "extends": [
-        "airbnb",
-        "airbnb-typescript",
+        // "airbnb",
+        // "airbnb-typescript",
         "airbnb/hooks",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
@@ -38,6 +38,8 @@ module.exports = {
               unnamedComponents: 'arrow-function',
             },
           ],
-        "prettier/prettier": ["error", { "endOfLine": "auto" }]
+        "prettier/prettier": ["error", { "endOfLine": "auto" }],
+        "skipBlankLines": false,
+        "semi": never,
     },
 }
